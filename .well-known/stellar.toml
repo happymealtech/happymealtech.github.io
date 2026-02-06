@@ -8,7 +8,7 @@ issuer="GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V"
 display_decimals=2
 name="Shampoo Detox Antiforfora"
 desc="Trattamento purificante professionale per capelli."
-image="https://happymealtech.github.io/hair/Detox.jpeg"
+image="https://happymealtech.github.io/hair/detox.jpeg"
 
 [[CURRENCIES]]
 code="NATURAL"
@@ -16,4 +16,4 @@ issuer="GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V"
 display_decimals=2
 name="Natural Gel & Cera"
 desc="Styling naturale a base di estratti botanici."
-image="https://happymealtech.github.io/hair/Natural.jpeg"
+image="https://happymealtech.github.io/hair/natural.jpeg"
