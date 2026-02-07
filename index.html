@@ -3,70 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hair Style Blockchain | Luxury Experience</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Hair Style Blockchain | Luxury Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        :root { --gold: #d4af37; --dark-bg: #0a0a0a; --card-bg: #141414; --text: #ffffff; --accent: #2ecc71; }
-        body { font-family: 'Montserrat', sans-serif; background-color: var(--dark-bg); color: var(--text); margin: 0; padding: 0; overflow-x: hidden; }
-        .hero { position: relative; height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; border-bottom: 2px solid var(--gold); }
-        .video-bg { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; transform: translate(-50%, -50%); z-index: -1; object-fit: cover; filter: brightness(45%); }
-        .hero-content { z-index: 1; padding: 0 20px; }
-        h1 { font-weight: 700; font-size: clamp(1.8em, 5vw, 3.5em); letter-spacing: 5px; color: var(--gold); text-transform: uppercase; text-shadow: 2px 2px 15px rgba(0,0,0,0.9); }
-        .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 50px 8%; max-width: 1400px; margin: auto; }
-        .card { background: var(--card-bg); border-radius: 20px; overflow: hidden; border: 1px solid #222; transition: all 0.4s ease; text-align: center; }
-        .card:hover { transform: translateY(-10px); border-color: var(--gold); box-shadow: 0 15px 30px rgba(212, 175, 55, 0.15); }
+        :root { --gold: #d4af37; --dark-bg: #0a0a0a; --card-bg: #1a1a1a; --text: #ffffff; --accent: #2ecc71; }
+        body { font-family: 'Montserrat', sans-serif; background-color: var(--dark-bg); color: var(--text); margin: 0; padding: 0; }
+        
+        /* HEADER VIDEO */
+        .hero { position: relative; height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; border-bottom: 3px solid var(--gold); }
+        .video-bg { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; transform: translate(-50%, -50%); z-index: -1; object-fit: cover; filter: brightness(40%); }
+        h1 { font-size: 2.5em; color: var(--gold); text-transform: uppercase; letter-spacing: 4px; margin: 0; text-shadow: 2px 2px 10px #000; }
+        
+        /* GRIGLIA PRODOTTI */
+        .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; padding: 40px 10%; max-width: 1400px; margin: auto; }
+        .card { background: var(--card-bg); border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: 0.3s; text-align: center; padding-bottom: 20px; }
+        .card:hover { border-color: var(--gold); transform: translateY(-5px); }
+        
         .image-container { width: 100%; height: 300px; overflow: hidden; }
         .image-container img { width: 100%; height: 100%; object-fit: cover; }
-        .content { padding: 25px; }
-        h3 { font-size: 1.1em; text-transform: uppercase; color: var(--gold); }
-        .price { font-size: 1.5em; color: var(--accent); font-weight: 700; margin: 15px 0; }
-        .buy-btn { display: block; border: 1px solid var(--gold); color: var(--gold); padding: 12px; text-decoration: none; border-radius: 50px; font-weight: 700; text-transform: uppercase; }
+        
+        .content { padding: 20px; }
+        
+        /* NOMI PRODOTTI - ORA BEN VISIBILI */
+        h3 { font-size: 1.4em; font-weight: 700; color: #ffffff; text-transform: uppercase; margin: 10px 0; letter-spacing: 1px; }
+        
+        .price { font-size: 1.6em; color: var(--accent); font-weight: 700; margin: 10px 0; }
+        
+        .buy-btn { display: inline-block; width: 80%; border: 2px solid var(--gold); color: var(--gold); padding: 12px; text-decoration: none; border-radius: 50px; font-weight: 700; text-transform: uppercase; transition: 0.3s; }
         .buy-btn:hover { background: var(--gold); color: #000; }
+        
+        footer { padding: 30px; text-align: center; color: #777; font-size: 0.9em; border-top: 1px solid #222; }
     </style>
 </head>
 <body>
+
     <section class="hero">
         <video autoplay muted loop playsinline class="video-bg">
-            <source src="video_salone(2).mp4" type="video/mp4">
+            <source src="video_salone.mp4" type="video/mp4">
         </video>
         <div class="hero-content">
             <h1>HAIR STYLE BLOCKCHAIN</h1>
-            <p>L'eccellenza certificata su rete Stellar</p>
+            <p style="color: white; letter-spacing: 2px;">Luxury Treatment on Stellar Network</p>
         </div>
     </section>
+
     <div class="container">
         <div class="card">
             <div class="image-container"><img src="shampo1.jpeg"></div>
-            <div class="content"><h3>Shampoo Professional 1</h3><p class="price">22 EURC</p>
-            <a href="https://lobstr.co/assets/shampo1:GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V" class="buy-btn">ACQUISTA ORA</a></div>
+            <div class="content">
+                <h3>SHAMPOO PRO 1</h3>
+                <p class="price">22 EURC</p>
+                <a href="https://lobstr.co/assets/shampo1:GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V" class="buy-btn">ACQUISTA</a>
+            </div>
         </div>
         <div class="card">
             <div class="image-container"><img src="love02.jpeg"></div>
-            <div class="content"><h3>Essential Love 02</h3><p class="price">15 EURC</p>
-            <a href="https://lobstr.co/assets/love02:GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V" class="buy-btn">ACQUISTA ORA</a></div>
+            <div class="content">
+                <h3>ESSENTIAL LOVE 02</h3>
+                <p class="price">15 EURC</p>
+                <a href="https://lobstr.co/assets/love02:GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V" class="buy-btn">ACQUISTA</a>
+            </div>
         </div>
         <div class="card">
-            <div class="image-container"><img src="davines.jpeg"></div>
-            <div class="content"><h3>Davines Treatment 3</h3><p class="price">31 EURC</p>
-            <a href="https://lobstr.co/assets/davines3:GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V" class="buy-btn">ACQUISTA ORA</a></div>
-        </div>
-        <div class="card">
-            <div class="image-container"><img src="setlove4.jpeg"></div>
-            <div class="content"><h3>Set Love Care 4</h3><p class="price">21 EURC</p>
-            <a href="https://lobstr.co/assets/setlove4:GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V" class="buy-btn">ACQUISTA ORA</a></div>
-        </div>
-        <div class="card">
-            <div class="image-container"><img src="love5.jpeg"></div>
-            <div class="content"><h3>Love Silk 5</h3><p class="price">12 EURC</p>
-            <a href="https://lobstr.co/assets/love5:GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V" class="buy-btn">ACQUISTA ORA</a></div>
-        </div>
-        <div class="card">
-            <div class="image-container"><img src="ener6.jpeg"></div>
-            <div class="content"><h3>Energy Booster 6</h3><p class="price">44 EURC</p>
-            <a href="https://lobstr.co/assets/ener6:GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V" class="buy-btn">ACQUISTA ORA</a></div>
-        </div>
-    </div>
-</body>
+            <div class="image-container"><img src="
 
 
             
