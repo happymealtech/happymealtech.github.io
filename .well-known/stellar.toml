@@ -17,3 +17,10 @@ display_decimals=2
 name="Natural Gel & Cera"
 desc="Styling naturale a base di estratti botanici."
 image="https://happymealtech.github.io/hair/Natural.jpeg"
+[[CURRENCIES]]
+code="AURUM"
+issuer="GD22GBKOUYWC3C2QDZPMT27GBD2L6STAPXN2QEZB3HX4GNISW3P7XSQK"
+display_decimals=7
+name="AURUM"
+desc="Descrizione del tuo token Aurum."
+image="https://happymealtech.github.io/hair/AURUM.jpeg"
