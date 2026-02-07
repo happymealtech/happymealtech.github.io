@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hair Style Blockchain | Luxury Shop</title>
+    <title>Hair Style Blockchain | Luxury Experience</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -20,37 +21,61 @@
             color: var(--text);
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            overflow-x: hidden;
         }
 
-        header {
-            padding: 60px 20px;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('hair/shampo1.jpeg'); /* Sfondo sfocato opzionale */
-            background-size: cover;
-            background-position: center;
+        /* --- VIDEO HEADER --- */
+        .hero {
+            position: relative;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
             border-bottom: 2px solid var(--gold);
         }
 
+        .video-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            object-fit: cover;
+            filter: brightness(45%);
+        }
+
+        .hero-content { z-index: 1; padding: 0 20px; }
+
         h1 {
             font-weight: 700;
-            font-size: 2.5em;
-            letter-spacing: 4px;
+            font-size: clamp(1.8em, 5vw, 3.5em);
+            letter-spacing: 5px;
             color: var(--gold);
             margin: 0;
             text-transform: uppercase;
+            text-shadow: 2px 2px 15px rgba(0,0,0,0.9);
         }
 
         .tagline {
             font-weight: 300;
-            color: #ccc;
-            margin-top: 10px;
+            color: #fff;
+            margin-top: 15px;
+            font-size: 1.1em;
+            letter-spacing: 1px;
         }
 
+        /* --- GRIGLIA 6 PRODOTTI --- */
         .container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
-            padding: 50px 10%;
+            padding: 50px 8%;
             max-width: 1400px;
             margin: auto;
         }
@@ -61,13 +86,13 @@
             overflow: hidden;
             border: 1px solid #222;
             transition: all 0.4s ease;
-            position: relative;
+            text-align: center;
         }
 
         .card:hover {
             transform: translateY(-10px);
             border-color: var(--gold);
-            box-shadow: 0 15px 30px rgba(212, 175, 55, 0.1);
+            box-shadow: 0 15px 30px rgba(212, 175, 55, 0.15);
         }
 
         .image-container {
@@ -80,154 +105,59 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.5s ease;
+            transition: transform 0.6s ease;
         }
 
         .card:hover .image-container img {
             transform: scale(1.1);
         }
 
-        .content {
-            padding: 20px;
-        }
-
-        h3 {
-            margin: 0;
-            font-size: 1.2em;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .price {
-            font-size: 1.4em;
-            color: var(--accent);
-            font-weight: 700;
-            margin: 15px 0;
-        }
-
+        .content { padding: 25px; }
+        h3 { margin: 0; font-size: 1.1em; text-transform: uppercase; letter-spacing: 1px; color: var(--gold); }
+        .price { font-size: 1.5em; color: var(--accent); font-weight: 700; margin: 15px 0; }
+        
         .buy-btn {
             display: block;
             background: transparent;
             color: var(--gold);
-            border: 2px solid var(--gold);
+            border: 1px solid var(--gold);
             padding: 12px;
             text-decoration: none;
             border-radius: 50px;
             font-weight: 700;
-            transition: all 0.3s ease;
+            transition: 0.3s;
             text-transform: uppercase;
-            font-size: 0.9em;
+            font-size: 0.85em;
         }
 
-        .buy-btn:hover {
-            background: var(--gold);
-            color: #000;
-        }
+        .buy-btn:hover { background: var(--gold); color: #000; }
 
         footer {
-            padding: 40px;
+            padding: 50px 20px;
             background: #050505;
-            color: #555;
+            color: #666;
             font-size: 0.8em;
-            border-top: 1px solid #222;
-        }
-
-        .stellar-badge {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 5px 15px;
-            border: 1px solid #333;
-            border-radius: 20px;
-            color: #888;
+            text-align: center;
+            border-top: 1px solid #111;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>HAIR STYLE BLOCKCHAIN</h1>
-        <p class="tagline">L'eccellenza del trattamento, la sicurezza della tecnologia Stellar</p>
-    </header>
+    <section class="hero">
+        <video autoplay muted loop playsinline class="video-bg">
+            <source src="hair/video_salone(2).mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1>HAIR STYLE BLOCKCHAIN</h1>
+            <p class="tagline">L'eccellenza certificata su rete Stellar</p>
+        </div>
+    </section>
     
     <div class="container">
         <div class="card">
-            <div class="image-container">
-                <img src="hair/shampo1.jpeg" alt="shampo1">
-            </div>
+            <div class="image-container"><img src="hair/shampo1.jpeg"></div>
             <div class="content">
                 <h3>Shampoo Professional 1</h3>
                 <p class="price">22 EURC</p>
-                <a href="https://lobstr.co/assets/shampo1:GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V" target="_blank" class="buy-btn">ACQUISTA ORA</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="image-container">
-                <img src="hair/love02.jpeg" alt="love02">
-            </div>
-            <div class="content">
-                <h3>Essential Love 02</h3>
-                <p class="price">15 EURC</p>
-                <a href="https://lobstr.co/assets/love02:GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V" target="_blank" class="buy-btn">ACQUISTA ORA</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="image-container">
-                <img src="hair/davines.jpeg" alt="davines3">
-            </div>
-            <div class="content">
-                <h3>Davines Treatment 3</h3>
-                <p class="price">31 EURC</p>
-                <a href="https://lobstr.co/assets/davines3:GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V" target="_blank" class="buy-btn">ACQUISTA ORA</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="image-container">
-                <img src="hair/setlove4.jpeg" alt="setlove4">
-            </div>
-            <div class="content">
-                <h3>Set Love Care 4</h3>
-                <p class="price">21 EURC</p>
-                <a href="https://lobstr.co/assets/setlove4:GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V" target="_blank" class="buy-btn">ACQUISTA ORA</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="image-container">
-                <img src="hair/love5.jpeg" alt="love5">
-            </div>
-            <div class="content">
-                <h3>Love Silk 5</h3>
-                <p class="price">12 EURC</p>
-                <a href="https://lobstr.co/assets/love5:GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V" target="_blank" class="buy-btn">ACQUISTA ORA</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="image-container">
-                <img src="hair/ener6.jpeg" alt="ener6">
-            </div>
-            <div class="content">
-                <h3>Energy Booster 6</h3>
-                <p class="price">44 EURC</p>
-                <a href="https://lobstr.co/assets/ener6:GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V" target="_blank" class="buy-btn">ACQUISTA ORA</a>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Hair Style Blockchain. Tutti i diritti riservati.</p>
-        <p>Distribuzione via Stellar Network</p>
-        <div class="stellar-badge">Verified Merchant: GDQ6UG...D7YKSLFX4V</div>
-    </footer>
-
-</body>
-</html>
- 
-  
-
-   
-       
-
+                <a href="
