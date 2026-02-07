@@ -1,26 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-    <title>Happymealtech Haircare</title>
-</head>
-<body style="font-family: Arial, sans-serif; text-align: center; padding: 50px;">
-    <h1>Benvenuti in Happymealtech</h1>
-    <p>Scopri i nostri prodotti per la cura dei capelli.</p>
-    
-    <div style="margin-top: 30px;">
-        <img src="hair/Detox.jpeg" alt="Shampoo Detox" style="width: 200px;">
-        <img src="hair/Natural.jpeg" alt="Shampoo Natural" style="width: 200px;">
-    </div>
-    
- <p style="margin-top: 20px;">I nostri token ufficiali: <b>DETOX</b>, <b>NATURAL</b> e <b>AURUM</b></p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hair Salon | Stellar Blockchain</title>
+    <style>
+        :root {
+            --gold: #d4af37;
+            --dark: #1a1a1a;
+            --light: #f4f4f4;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+        }
+        header {
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://happymealtech.github.io/hair/AURUM.jpeg');
+            background-size: cover;
+            background-position: center;
+            border-bottom: 3px solid var(--gold);
+        }
+        h1 { font-size: 3rem; margin: 0; color: var(--gold); text-transform: uppercase; letter-spacing: 4px; }
+        .tagline { font-style: italic; font-size: 1.2rem; margin-top: 10px; }
 
-    <div style="text-align: center; margin-top: 50px; font-family: sans-serif;">
-        <img src="https://happymealtech.github.io/hair/AURUM.jpeg" alt="AURUM Logo" style="width: 150px; border-radius: 50%;">
-        <h2 style="color: #D4AF37;">Progetto AURUM</h2>
-        <p>Token ufficiale su Blockchain Stellar</p>
-        <p><strong>Asset Code:</strong> AURUM</p>
-        <p style="font-size: 0.8em; color: gray;">Issuer: GD22GBKOUYWC3C2QDZPMT27GBD2L6STAPXN2QEZB3HX4GNISW3P7XSQK</p>
-    </div>
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
 
-</body>
-</html>
+        .card {
+            background: #252525;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #333;
