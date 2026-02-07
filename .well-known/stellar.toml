@@ -1,26 +1,60 @@
 #"Aggiornamento 2"
 
+# File TOML per il Negozio di Parrucchiere su Stellar
 ACCOUNTS=["GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V"]
 
 [[CURRENCIES]]
-code="DETOX"
+code="shampo1"
 issuer="GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V"
 display_decimals=2
-name="Shampoo Detox Antiforfora"
-desc="Trattamento purificante professionale per capelli."
-image="https://happymealtech.github.io/hair/Detox.jpeg"
+name="Shampoo Professionale 1"
+desc="Shampoo specifico per trattamenti in salone."
+image="https://happymealtech.github.io/hair/shampo1.jpeg"
 
 [[CURRENCIES]]
-code="NATURAL"
+code="love02"
 issuer="GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V"
 display_decimals=2
-name="Natural Gel & Cera"
-desc="Styling naturale a base di estratti botanici."
-image="https://happymealtech.github.io/hair/Natural.jpeg"
+name="Love 02"
+desc="Trattamento nutriente per capelli setosi."
+image="https://happymealtech.github.io/hair/love02.jpeg"
+
+[[CURRENCIES]]
+code="davines3"
+issuer="GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V"
+display_decimals=2
+name="Davines 3"
+desc="Prodotto professionale linea Davines."
+image="https://happymealtech.github.io/hair/davines3.jpeg"
+
+[[CURRENCIES]]
+code="setlove4"
+issuer="GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V"
+display_decimals=2
+name="Set Love 4"
+desc="Kit completo per la cura quotidiana."
+image="https://happymealtech.github.io/hair/setlove4.jpeg"
+
+[[CURRENCIES]]
+code="love5"
+issuer="GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V"
+display_decimals=2
+name="Love 5"
+desc="Maschera rigenerante profonda."
+image="https://happymealtech.github.io/hair/love5.jpeg"
+
+[[CURRENCIES]]
+code="ener6"
+issuer="GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V"
+display_decimals=2
+name="Energy 6"
+desc="Trattamento energizzante per cute e capelli."
+image="https://happymealtech.github.io/hair/ener6.jpeg"
+
 [[CURRENCIES]]
 code="AURUM"
 issuer="GD22GBKOUYWC3C2QDZPMT27GBD2L6STAPXN2QEZB3HX4GNISW3P7XSQK"
 display_decimals=7
 name="AURUM"
-desc="Descrizione del tuo token Aurum."
+desc="Token esclusivo Aurum."
 image="https://happymealtech.github.io/hair/AURUM.jpeg"
