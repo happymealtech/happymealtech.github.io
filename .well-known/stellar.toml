@@ -1,7 +1,5 @@
 #"Aggiornamento 2"
-
-
-ACCOUNTS=["GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V"]
+ACCOUNTS=["GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM6SD7YKSLFX4V", "GD22GBKOUYWC3C2QDZPMT27GBD2L6STAPXN2QEZB3HX4GNISW3P7XSQK"]
 
 [[CURRENCIES]]
 code="shampo1"
@@ -38,3 +36,11 @@ code="ener6"
 issuer="GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V"
 display_decimals=2
 image="https://happymealtech.github.io/hair/ener6.jpeg"
+[[CURRENCIES]]
+code="AURUM"
+issuer="GD22GBKOUYWC3C2QDZPMT27GBD2L6STAPXN2QEZB3HX4GNISW3P7XSQK"
+display_precision=2
+name="AURUM Global Token"
+desc="Asset digitale indipendente basato sulla rarità digitale e il minimalismo tecnologico. Fornitura limitata a 23 milioni."
+image="https://happymealtech.github.io/aur/img/AURUM.jpeg"
+documentation="https://happymealtech.github.io/aur/WHITEPAPER.md"
