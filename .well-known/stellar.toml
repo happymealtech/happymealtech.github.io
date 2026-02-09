@@ -1,43 +1,8 @@
 #"Aggiornamento 2"
-ACCOUNTS=["GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM6SD7YKSLFX4V", "GD22GBKOUYWC3C2QDZPMT27GBD2L6STAPXN2QEZB3HX4GNISW3P7XSQK"]
+ACCOUNTS="GD22GBKOUYWC3C2QDZPMT27GBD2L6STAPXN2QEZB3HX4GNISW3P7XSQK"
 
 [[CURRENCIES]]
-code="shampo1"
-issuer="GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V"
-display_decimals=2
-image="https://happymealtech.github.io/hair/shampo1.jpeg"
 
-[[CURRENCIES]]
-code="love02"
-issuer="GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V"
-display_decimals=2
-image="https://happymealtech.github.io/hair/love02.jpeg"
-
-[[CURRENCIES]]
-code="davines3"
-issuer="GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V"
-display_decimals=2
-image="https://happymealtech.github.io/hair/davines.jpeg"
-
-[[CURRENCIES]]
-code="setlove4"
-issuer="GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V"
-display_decimals=2
-image="https://happymealtech.github.io/hair/setlove4.jpeg"
-
-[[CURRENCIES]]
-code="love5"
-issuer="GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V"
-display_decimals=2
-image="https://happymealtech.github.io/hair/love5.jpeg"
-
-[[CURRENCIES]]
-code="ener6"
-issuer="GDQ6UGSNP4W63B6JSDHLUBMGQIPALJX5X60RM65D7YKSLFX4V"
-display_decimals=2
-image="https://happymealtech.github.io/hair/ener6.jpeg"
-[[CURRENCIES]]
-code="AURUM"
 issuer="GD22GBKOUYWC3C2QDZPMT27GBD2L6STAPXN2QEZB3HX4GNISW3P7XSQK"
 display_precision=2
 name="AURUM Global Token"
