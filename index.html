@@ -3,31 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AURUM - Digital Scarcity</title>
+    <title>AURUM - Official Token</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #0d0d0d; color: #f4d03f; text-align: center; padding: 40px; margin: 0; }
-        .card { border: 1px solid #f4d03f; padding: 30px; display: inline-block; border-radius: 20px; background: linear-gradient(145deg, #1a1a1a, #000); box-shadow: 0 10px 30px rgba(244, 208, 63, 0.2); max-width: 600px; }
-        img { width: 180px; border-radius: 50%; border: 4px solid #f4d03f; margin-bottom: 20px; transition: transform 0.3s; }
-        img:hover { transform: scale(1.05); }
-        h1 { letter-spacing: 8px; text-transform: uppercase; margin-bottom: 5px; font-size: 2.5em; }
-        .supply { font-size: 0.9em; color: #fff; margin-bottom: 25px; letter-spacing: 1px; }
-        p { color: #ccc; line-height: 1.8; margin-bottom: 30px; font-style: italic; }
-        
-        .btn-group { display: flex; flex-direction: column; gap: 15px; align-items: center; }
-        .btn { width: 80%; padding: 15px 25px; text-decoration: none; font-weight: bold; border-radius: 50px; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; }
-        
-        .buy { background-color: #f4d03f; color: #000; border: 2px solid #f4d03f; }
-        .buy:hover { background-color: transparent; color: #f4d03f; }
-        
-        .cert { background-color: transparent; color: #fff; border: 2px solid #fff; font-size: 0.8em; }
-        .cert:hover { border-color: #f4d03f; color: #f4d03f; }
-
-        .footer { margin-top: 40px; font-size: 0.7em; color: #666; }
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden; /* Evita lo scroll per l'effetto full screen */
+        }
+        .bg-aurum {
+            background: radial-gradient(circle, #1a1a1a 0%, #0a0a0a 100%);
+        }
+        .gold-border {
+            border: 2px solid #d4af37;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+        }
+        .gold-text {
+            color: #d4af37;
+        }
     </style>
 </head>
-<body>
+<body class="bg-aurum flex items-center justify-center text-white">
 
-    <div class="card">
-        <img src="https://happymealtech.github.io/aur/img/AURUM.jpeg" alt="AURUM Token Logo">
-        <h1>AURUM</h1>
-        <div class
+    <div class="w-full h-full flex items-center justify-center p-4">
+        
+        <div class="gold-border max-w-2xl w-full p-10 rounded-3xl text-center bg-black bg-opacity-40 backdrop-blur-md">
+            
+            <div class="mb-6 flex justify-center">
+                <div class="relative w-40 h-40 flex items-center justify-center border-2 border-indigo-500 rounded-full shadow-[0_0_30px_rgba(79,70,229,0.5)]">
+                    <i class="fas fa-atom text-6xl text-indigo-400"></i>
+                </div>
+            </div>
+
+            <h1 class="text-5xl font-bold tracking-widest gold-text mb-2">AURUM</h1>
+            <p class="text-sm uppercase tracking-tighter text-indigo-400 mb-8">Powered by Stellar ★</p>
+
+            <p class="text-lg text-gray-300 mb-6 leading-relaxed px-4">
+                Asset digitale indipendente basato sulla rarità digitale e il minimalismo tecnologico.
+            </p>
+
+            <div class="mb-8">
+                <p class="text-xl font-semibold">Fornitura limitata: <span class="gold-text">23.000.000 AURUM</span></p>
+                <p class="text-green-400 text-sm mt-2 font-mono italic">✓ Verificato ufficialmente sulla rete Stellar</p>
+            </div>
+
+            <div class="flex flex-col gap-4 items-center">
+                
+                <button class="w-full md:w-80 bg-green-600 hover:bg-green-500 text-white font-bold py-4 rounded-xl transition duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2">
+                    <i class="fas fa-shopping-cart"></i> ACQUISTA ORA (XLM)
+                </button>
+
+                <a href="https://stellar.expert" target="_blank" class="w-full md:w-80 bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition duration-300 shadow-md">
+                    Visualizza su Stellar.Expert
+                </a>
+
+                <a href="#" id="downloadCert" class="text-gray-400 hover:text-white text-sm underline mt-4 flex items-center gap-2">
+                    <i class="fas fa-file-contract"></i> Scarica Certificato di Ufficialità (PDF)
+                </a>
+
+                <a href="#" class="text-gray-500 text-xs mt-2 uppercase tracking-widest">Leggi il Whitepaper</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // Simulazione funzione download certificato
+        document.getElementById('downloadCert').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert("Generazione del Certificato Crittografico AURUM in corso...");
+            // Qui in futuro collegheremo il file PDF reale caricato su GitHub
+        });
+    </script>
+</body>
+</html>
