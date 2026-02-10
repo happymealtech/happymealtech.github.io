@@ -1,0 +1,16 @@
+# File di configurazione Stellar per happymealtech.github.io
+
+# Informazioni generali del dominio
+DOMAIN="happymealtech.github.io"
+
+# Account verificati (Aggiungi qui il tuo indirizzo distributore se ne hai uno)
+ACCOUNTS=["GD22GBKOUYWC3C2QDZPMT27GBD2L6STAPXN2QEZB3HX4GNISW3P7XSQK"]
+
+[[CURRENCIES]]
+code="AURUM"
+issuer="GD22GBKOUYWC3C2QDZPMT27GBD2L6STAPXN2QEZB3HX4GNISW3P7XSQK"
+display_precision=2
+name="AURUM Global Token"
+desc="Asset digitale indipendente basato sulla rarità digitale e il minimalismo tecnico."
+image="https://happymealtech.github.io/aur/logo-aurum.jpeg"
+documentation="https://happymealtech.github.io/aur/WHITEPAPER.md"
