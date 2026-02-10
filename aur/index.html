@@ -1,1 +1,77 @@
-<meta http-equiv="refresh" content="0; url=https://happymealtech.github.io/">
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURUM | Official Immutable Asset</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+        
+        body {
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            font-family: 'Inter', sans-serif;
+        }
+        .font-luxury { font-family: 'Cinzel', serif; }
+        .gold-gradient {
+            background: linear-gradient(135deg, #d4af37 0%, #f9e29c 50%, #b8860b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border {
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        .glow {
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-6">
+
+    <div class="max-w-md w-full bg-[#111] rounded-3xl p-8 gold-border glow text-center">
+        <div class="relative mb-8 inline-block">
+            <div class="absolute inset-0 rounded-full border border-yellow-500 animate-ping opacity-20"></div>
+            <img src="logo-aurum.jpeg" alt="AURUM Logo" class="w-40 h-40 object-contain rounded-full border-2 border-[#d4af37] p-1">
+        </div>
+
+        <h1 class="font-luxury text-5xl mb-2 gold-gradient tracking-widest uppercase">Aurum</h1>
+        <p class="text-[10px] tracking-[0.5em] text-gray-500 mb-8 uppercase">Stellar Immutable Asset</p>
+
+        <div class="bg-white/5 p-6 rounded-2xl mb-8 border border-white/10 text-left">
+            <div class="flex justify-between mb-4">
+                <span class="text-[10px] text-gray-400 uppercase tracking-widest">Status</span>
+                <span class="text-[10px] text-red-500 font-bold uppercase">Locked / Immutable</span>
+            </div>
+            <div class="flex justify-between items-center">
+                <div>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest">Total Supply</p>
+                    <p class="text-2xl font-bold text-white">23.000.000</p>
+                </div>
+                <div class="text-right">
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest">Network</p>
+                    <p class="text-sm font-semibold text-blue-400">STELLAR</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-4">
+            <a href="https://lobstr.co/assets/AURUM:GD22GBKOUYWC3C2QDZPMT27GBD2L6STAPXN2QEZB3HX4GNISW3P7XSQK" 
+               target="_blank"
+               class="block w-full py-4 bg-[#d4af37] text-black font-bold rounded-xl hover:bg-[#f9e29c] transition duration-300 uppercase text-xs tracking-widest">
+                View on Lobstr
+            </a>
+            <a href="WHITEPAPER.md" 
+               class="block w-full py-4 bg-transparent border border-white/20 text-white font-semibold rounded-xl hover:bg-white/5 transition duration-300 text-xs tracking-widest uppercase">
+                Technical Docs
+            </a>
+        </div>
+
+        <p class="mt-8 text-[9px] text-gray-600 leading-relaxed uppercase tracking-tighter">
+            Issuer: GD22GBKOUYWC3C2QDZPMT27GBD2L6STAPXN2QEZB3HX4GNISW3P7XSQK<br>
+            © 2026 Happymealtech Blockchain Labs
+        </p>
+    </div>
+
+</body>
+</html>
